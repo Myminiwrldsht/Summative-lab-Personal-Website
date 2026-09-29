@@ -1,112 +1,118 @@
+/* HEADER SECTION  */
 .header {
-  background-color: #c7d7e7;
-  text-align: center;
-  color: #000000;
-  padding: 20px;
+  background-color: #c7d7e7; /* light pastel blue background */
+  text-align: center; /* centers the name and link */
+  color: #000000; /* black text */
+  padding: 20px; /* space inside the header, on all sides */
 }
 
 .header a {
-  color: rgb(23, 112, 120);
-  text-decoration: none;
-    transition: color 0.2s ease;
+  color: rgb(23, 112, 120); /* teal link color */
+  text-decoration: none; /* removes the default underline */
+  transition: color 0.2s ease; /* animates color changes smoothly, e.g. on hover */
 }
 
-.header a:hover{
-    color: rgb(15, 80, 87);
-  text-decoration: underline;
+.header a:hover {
+  color: rgb(15, 80, 87); /* darker teal when hovered */
+  text-decoration: underline; /* underline appears on hover, showing it's clickable */
 }
 
+/* ABOUT SECTION  */
 #about {
-  justify-content: center;
-  padding: 20px;
+  justify-content: center; /* only takes effect on flex/grid containers */
+  padding: 20px; /* space inside the about section */
 }
 
+/* PROJECTS SECTION: outer container */
 .projects {
-  padding: 20px;
-  margin: 0;
-  
+  padding: 20px; /* space inside the whole projects section */
+  margin: 0; /* removes default outer spacing */
 }
 
+/* "My Projects" heading + intro paragraph wrapper */
 .projects .projects-intro {
   padding: 0;
   margin: 0;
 }
 
 .projects .projects-intro h2 {
-  text-align: center;
-  color: #495b7d;
+  text-align: center; /* centers "My Projects" heading */
+  color: #495b7d; /* muted blue-purple */
   padding: 0;
 }
 
 .projects .projects-intro p {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* space below intro text, before the cards start */
   text-align: center;
 }
 
+/* ===== THE GRID: arranges project cards into columns ===== */
 .projects .grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(250px,2fr));
-  gap: 2rem;
-  margin-top: 40px;
-  
- 
-
+  display: grid; /* activates CSS grid layout */
+  grid-template-columns: repeat(
+    2,
+    minmax(250px, 2fr)
+  ); /*  2 columns; each is at least 250px, and shares space using a 2fr ratio */
+  gap: 2rem; /* space between cards, both directions */
+  margin-top: 40px; /* space above the grid, below the intro text */
 }
 
+/*  INDIVIDUAL PROJECT CARD */
 .projects .project-card {
-  display: flex;
+  display: flex; /* stacks the card's contents vertically */
   flex-direction: column;
-  background-color: #FFFFFF;
-  border: 1px solid #F1E6FF;
-  border-radius: 12px;
-  padding: 16px;
+  background-color: #ffffff; /* white card background */
+  border: 1px solid #f1e6ff; /* light lilac border */
+  border-radius: 12px; /* rounded corners */
+  padding: 16px; /* inner spacing on all sides */
   text-align: left;
-  box-shadow: 0 2px 6px rgba(142, 124, 195, 0.15);
-  height: 100%;
-  
+  box-shadow: 0 2px 6px rgba(142, 124, 195, 0.15); /* soft default shadow */
+  height: 100%; /* all cards fill their grid cell equally */
 }
 
 .projects .project-card h3 {
-  font-family: monospace;
+  font-family: monospace; /* code-style font for project titles */
   color: rgb(63, 22, 63);
-  margin: 0 0 8px;
+  margin: 0 0 8px; /* space below the title only */
 }
 
 .projects .project-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+  width: 100%; /* image fills the card's width */
+  height: 150px; /* fixed height, same for every card */
+  object-fit: cover; /* crops the image to fit without stretching */
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
 .projects .project-card p {
   font-size: 18px;
-  flex-grow: 1;
+  flex-grow: 1; /* takes remaining space, pushing the link down */
   margin: 0 0 10px;
 }
 
 .projects .project-card a {
   display: inline-block;
-  margin-top: auto;
+  margin-top: auto; /* combined with flex-grow above, aligns links at the same height */
   color: rgb(23, 112, 120);
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* smooth color change on hover */
 }
 
 .projects .project-card a:hover {
-  color: rgb(15, 80, 87);
-  text-decoration: underline;
+  color: rgb(15, 80, 87); /* darker teal on hover */
+  text-decoration: underline; /* underline appears on hover */
 }
 
+/* Hover effect on the whole card: lifts up with a stronger shadow */
 .projects .project-card:hover {
-     transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(142, 124, 195, 0.3);
+  transform: translateY(-6px); /* moves the card up 6px */
+  box-shadow: 0 8px 20px rgba(142, 124, 195, 0.3); /* bigger, darker shadow */
 }
 
-@media (min-width: 300px) and (max-width: 960px) {
+/*  RESPONSIVE LAYOUT: stacks cards on small/medium screens */
+@media (min-width: 320px) and (max-width: 768px) {
   .projects .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 column instead of 2, for phones/tablets */
   }
 }

@@ -5,16 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
+    <!----> Links this page to its stylesheet, so the CSS rules apply -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- HEADER SECTION: name, title, and GitHub link -->
     <section class="header">
         <div class="headerSection">
             <h1>Lakeisha Maya: Junior Developer</h1>
             <a href="https://github.com/Myminiwrldsht">My GitHub Profile</a>
         </div>
     </section>
+    <!-- ABOUT SECTION: short bio -->
 
     <section id="about">
         <div class="about-me">
@@ -22,7 +25,8 @@
                 Hi, i'm Lakeisha Maya, an upcoming Junior Developer.<br />
                 I am a Software Engineering student based in Kenya with a passion for
                 building practical, user-friendly digital experiences.<br />
-                <br />
+                <br /> <!-- <br /> creates a line break inside the paragraph -->
+
                 I enjoy turning ideas into functional applications and learning how
                 the different pieces of technology work together, from writing clean
                 code and working with databases to design interfaces that are simple
@@ -40,48 +44,59 @@
             </p>
         </div>
     </section>
+    <!-- PROJECTS SECTION: intro text + grid of project cards -->
 
     <section class="projects">
+        <!-- Heading and intro line above the project cards -->
+
         <div class="projects-intro">
             <h2>My Projects</h2>
             <p>Here are some of the projects i've worked on while learning, experimenting, and solving real problems.
             </p>
 
         </div>
+        <!-- Container that CSS turns into a 2-column grid -->
 
         <div class="grid">
+            <!-- CARD 1: To-do App -->
 
             <div class="project-card">
                 <h3>To-do App</h3>
-                <img src="/assets/to-do-app.png" alt="maya's to-do app" width="500px" height="250px">
+                <img src="/assets/to-do-app.png" alt="maya's to-do app" width="500" height="250">
                 <p>A simple task manager built to practice DOM manipulation and local storage.</p>
                 <a href="https://myminiwrldsht.github.io/todo-App/">View the live site!</a>
             </div>
 
-           
+
+            <!-- CARD 2: Akan Name Generator -->
 
             <div class="project-card">
                 <h3>Akan Name Generator</h3>
-                <img src="/assets/akan-name-generator.png" alt="Akan Name Generator" width="500px" height="250px">
-                <p>This is a simple web application that calculates the day of the week a user was born and assigns them an Akan name based on their gender.</p>
+                <img src="/assets/akan-name-generator.png" alt="Akan Name Generator" width="500" height="250">
+                <p>This is a simple web application that calculates the day of the week a user was born and assigns them
+                    an Akan name based on their gender.</p>
                 <a href="https://myminiwrldsht.github.io/Akan_name_generator/">view the live site!</a>
             </div>
+            <!-- CARD 3: Couture Link -->
 
             <div class="project-card">
                 <h3>Couture Link</h3>
-                <img src="/assets/couture-link.png" alt="Couture Link" width="500px" height="250px">
-                <p>This is a Pinterest-inspired tailoring web application that connects users with skilled tailors for custom clothing requests.</p>
+                <img src="/assets/couture-link.png" alt="Couture Link" width="500" height="250">
+                <p>This is a Pinterest-inspired tailoring web application that connects users with skilled tailors for
+                    custom clothing requests.</p>
                 <a href="https://myminiwrldsht.github.io/Couture-Link/">view the live site!</a>
             </div>
+            <!-- CARD 4: JavaScript Calculator -->
 
             <div class="project-card">
                 <h3>JavaScript Calculator</h3>
-                <img src="/assets/calculator.png" alt="JavaScript calculator" width="500px" height="250px">
-                <p>A simple calculator built with JavaScript. It performs basic arithmetic and keeps a history of every calculation.</p>
+                <img src="/assets/calculator.png" alt="JavaScript calculator" width="500" height="250">
+                <p>A simple calculator built with JavaScript. It performs basic arithmetic and keeps a history of every
+                    calculation.</p>
                 <a href="https://github.com/Myminiwrldsht/JS-Calculator">GitHub Repo</a>
             </div>
-            </div>
-            
+        </div>
+
 
         </div>
     </section>
