@@ -7,6 +7,13 @@
 
 .header a {
   color: rgb(23, 112, 120);
+  text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.header a:hover{
+    color: rgb(15, 80, 87);
+  text-decoration: underline;
 }
 
 #about {
@@ -85,4 +92,21 @@
   color: rgb(23, 112, 120);
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.projects .project-card a:hover {
+  color: rgb(15, 80, 87);
+  text-decoration: underline;
+}
+
+.projects .project-card:hover {
+     transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(142, 124, 195, 0.3);
+}
+
+@media (min-width: 300px) and (max-width: 960px) {
+  .projects .grid {
+    grid-template-columns: 1fr;
+  }
 }
