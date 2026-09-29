@@ -1,5 +1,5 @@
 
-.header{
+.header {
     background-color: #c7d7e7;
     text-align: center;
     color: #000000;
@@ -7,15 +7,41 @@
 
 }
 
-.header a{
+.header a {
     color:rgb(23, 112, 120);
    
 }
 
-#about{
+#about {
     justify-content:center;
     padding: 20px;
 
 }
 
+.projects {
+    padding: 20px;
+    justify-content: space-around;
+    margin: 0;
+
+}
+
+ .projects .projects-intro {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.projects .projects-intro h2 {
+    text-align: center;
+    color: #495b7d;
+    padding: 0;
+
+
+}
+
+.projects .projects-intro p {
+    margin-bottom: 12px;
+    text-align: center;
+}
 
