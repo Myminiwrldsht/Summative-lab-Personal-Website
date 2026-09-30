@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A personal portfolio site for Lakeisha Maya, Junior Developer, showcasing background and projects.
+A personal portfolio site as a Junior Developer, showcasing background and projects.
 
 ## Sections
 
