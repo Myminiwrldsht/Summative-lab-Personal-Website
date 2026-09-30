@@ -111,7 +111,7 @@
 }
 
 /*  RESPONSIVE LAYOUT: stacks cards on small/medium screens */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 980px) {
   .projects .grid {
     grid-template-columns: 1fr; /* 1 column instead of 2, for phones/tablets */
   }
@@ -121,5 +121,5 @@
 #footer {
   text-align: center;
   color: rgb(23, 112, 120);
-  padding: 50px;
+  padding: 70px;
 }
